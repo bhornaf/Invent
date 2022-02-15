@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Servicios</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
     </main>
     <section class="services">
         <div class="services__row container">
-            <div class="services__row__img">
+            <div class="services__row__img" data-aos="fade-right">
                 <img src="../assets/undraw_programming_re_kg9v.svg" alt="Asesoria">
             </div>
             <div class="services__row__info">
@@ -50,12 +51,12 @@
                 <p> Diseño de piezas gráficas(Tarjetas Personales, afiches, volantes, gigantografias).</p>
                 <p> Diseño gráfico para redes sociales.</p>
             </div>
-            <div class="services__row__img">
+            <div class="services__row__img" data-aos="fade-left">
                 <img src="../assets/undraw_building_blocks_re_rwls.svg" alt="Asesoria">
             </div>
         </div>
         <div class="container servicios__row">
-            <div class="services__row__img">
+            <div class="services__row__img" data-aos="fade-right">
                 <img src="../assets/undraw_teacher_re_sico.svg" alt="Asesoria">
             </div>
             <div class="services__row__info">
@@ -72,5 +73,9 @@
     <footer class="footer">
         <p>copyright© 2022 | Brayyan Horna - Todos los derechos reservados</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

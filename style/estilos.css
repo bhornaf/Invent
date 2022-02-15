@@ -400,6 +400,13 @@ body{
 .clientes__img__row div img{
     height: 100px;
     width: 100%;
+    padding: 10px;
+}
+
+.clientes__img__row div img:hover{
+    background:#6B62FF;
+    transform: scale(1.4,1.4);
+    transition: 0.5s;
 }
 
 /* ESTILOS CONTACTO */
