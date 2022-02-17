@@ -36,7 +36,6 @@ body{
 
 .team{
     background: #E6E6E6;
-    /* display: inline-block; */
     height: auto;
 }
 
@@ -49,7 +48,7 @@ body{
 
 .card-title--color{
     color: #6B62FF;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .card:hover{
@@ -72,4 +71,18 @@ body{
 .item_services:before{
     color: #3F3D56;
     content: "- ";
+}
+
+.clients{
+    background: #E6E6E6;
+    height: auto;
+}
+
+.clients_img img{
+    height: 10rem;
+}
+.clients_img:hover{
+    background:#6B62FF;
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
 }

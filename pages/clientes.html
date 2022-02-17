@@ -4,103 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../style/estilos.css">
     <title>Clientes</title>
 </head>
 <body>
-    <header class="header">
-        <a class="header__logo" href="../index.html">INVENTS</a>
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a class="active" href="#">Clientes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-mobile navbar--color">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">INVENTS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-        </nav>
-    </header>
-    <main class="comments">
-        <h1>Clientes satisfechos</h1>
-        <p>Agradecemos todas las increibles opiniones de nuestros clientes, haremos nuestro mayor esfuerzo para seguir contando con su confianza.</p>
-        <section class="comments__client">
-            <div class="comments__client__row">
-                <div class="comments__client__card">
-                    <div class="comments__client__card__photo">
-                        <img src="../assets/veronica.jpeg" alt="fotoCliente">
-                    </div>
-                    <div class="comments__client__card__info">
-                        <p>"Trabajar con INVENTS es sentir tranquilidad y confianza por su trabajo personalizado. Ellos siempre están dispuestos a escuchar nuestras ideas y brindan una serie de alternativas que permiten mejorar la calidad de su trabajo. Estamos muy cómodos y contentos con su trabajo pues las herramientas que utilizan en los sistemas permiten el fácil acceso y manejo de la plataforma."</p>
-                        <span>-Lorem ipsum dolor sit.</span>
-                    </div>
-                </div>
-                <div class="comments__client__card">
-                    <div class="comments__client__card__photo">
-                        <img src="../assets/veronica.jpeg" alt="fotoCliente">
-                    </div>
-                    <div class="comments__client__card__info">
-                        <p>"El trabajo que realiza INVENTS es excelente y responsable, trabajamos con ellos desde el 2015 y siempre están cuando se les requieren y siempre con ideas nuevas innovadoras para mejorar nuestras plataformas web."</p>
-                        <span>-Lorem ipsum dolor sit.</span>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1 class="title display-4 text-center mt-5">Clientes satisfechos</h1>
+        <p class="lead text-center mb-4">Agradecemos todas las increibles opiniones de nuestros clientes, haremos nuestro mayor esfuerzo para seguir contando con su confianza.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img class="img-fluid" src="../assets/veronica.jpeg" alt="fotoCliente">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <p>"Trabajar con INVENTS es sentir tranquilidad y confianza por su trabajo personalizado. Ellos siempre están dispuestos a escuchar nuestras ideas y brindan una serie de alternativas que permiten mejorar la calidad de su trabajo. Estamos muy cómodos y contentos con su trabajo pues las herramientas que utilizan en los sistemas permiten el fácil acceso y manejo de la plataforma."</p>
+                                <span>-Lorem ipsum dolor sit.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="comments__client__row">
-                <div class="comments__client__card">
-                    <div class="comments__client__card__photo">
-                        <img src="../assets/veronica.jpeg" alt="fotoCliente">
-                    </div>
-                    <div class="comments__client__card__info">
-                        <p>"Si tuviera que resumir en una palabra el trabajo de INVENTS, sería "profesionalismo". Además de ser creativos y responsables con cada uno de sus trabajos, están siempre disponibles para realizar modificaciones y actualizaciones de acuerdo a lo que en el camino se va necesitando. Nuestra página web es nuestra mejor carta de presentación virtual, y es gracias a ellos."</p>
-                        <span>-Lorem ipsum dolor sit.</span>
-                    </div>
-                </div>
-                <div class="comments__client__card">
-                    <div class="comments__client__card__photo">
-                        <img src="../assets/veronica.jpeg" alt="fotoCliente">
-                    </div>
-                    <div class="comments__client__card__info">
-                        <p>"Venimos trabajando con INVENTS desde 2014, ellos han creado una página web en tres idiomas; español, inglés y alemán mediante la cual le contamos al mundo lo que hacemos como Asociación Cultural. Nuestra página web se ha convertido en uno de nuestros principales canales de difusión de nuestros servicios. Tenemos plena confianza en el trabajo que realizan y estamos satisfechos del servicio prestado."</p>
-                        <span>-Lorem ipsum dolor sit.</span>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img class="img-fluid" src="../assets/veronica.jpeg" alt="fotoCliente">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <p>"Trabajar con INVENTS es sentir tranquilidad y confianza por su trabajo personalizado. Ellos siempre están dispuestos a escuchar nuestras ideas y brindan una serie de alternativas que permiten mejorar la calidad de su trabajo. Estamos muy cómodos y contentos con su trabajo pues las herramientas que utilizan en los sistemas permiten el fácil acceso y manejo de la plataforma."</p>
+                                <span>-Lorem ipsum dolor sit.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="clients">
-            <h2 data-aos="flip-left">Ellos confían en Nosotros</h2>
-            <div class="clients__img">
-                <div class="clientes__img__row">
-                    <div>
-                        <img src="../assets/visa.png" alt="clientes">
-                    </div>
-                    <div>
-                        <img src="../assets/america.png" alt="clientes">
-                    </div>
-                    <div>
-                        <img src="../assets/ebay.png" alt="clientes">
-                    </div>
-                </div>
-                <div class="clientes__img__row">
-                    <div>
-                        <img src="../assets/paypal.png" alt="clientes">
-                    </div>
-                    <div>
-                        <img src="../assets/paysafe.png" alt="clientes">
-                    </div>
-                    <div>
-                        <img src="../assets/unionpay.png" alt="clientes">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img class="img-fluid" src="../assets/veronica.jpeg" alt="fotoCliente">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <p>"Trabajar con INVENTS es sentir tranquilidad y confianza por su trabajo personalizado. Ellos siempre están dispuestos a escuchar nuestras ideas y brindan una serie de alternativas que permiten mejorar la calidad de su trabajo. Estamos muy cómodos y contentos con su trabajo pues las herramientas que utilizan en los sistemas permiten el fácil acceso y manejo de la plataforma."</p>
+                                <span>-Lorem ipsum dolor sit.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img class="img-fluid" src="../assets/veronica.jpeg" alt="fotoCliente">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <p>"Trabajar con INVENTS es sentir tranquilidad y confianza por su trabajo personalizado. Ellos siempre están dispuestos a escuchar nuestras ideas y brindan una serie de alternativas que permiten mejorar la calidad de su trabajo. Estamos muy cómodos y contentos con su trabajo pues las herramientas que utilizan en los sistemas permiten el fácil acceso y manejo de la plataforma."</p>
+                                <span>-Lorem ipsum dolor sit.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <p>copyright© 2022 | Brayyan Horna - Todos los derechos reservados</p>
+    <section class="clients container-fluid">
+        <h2 class="subtitle text-center pt-5" data-aos="flip-left">Ellos confían en Nosotros</h2>
+        <div class="container pt-5">
+            <div class="row justify-content-center pb-5">
+                <div class="clients_img col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="../assets/visa.png" alt="clientes">
+                </div>
+                <div class="clients_img col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="../assets/america.png" alt="clientes">
+                </div>
+                <div class="clients_img col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="../assets/ebay.png" alt="clientes">
+                </div>
+            </div>
+            <div class="row justify-content-center pb-5">
+                <div class="clients_img col-md-4">
+                    <img  class="img-fluid mx-auto d-block" src="../assets/paypal.png" alt="clientes">
+                </div>
+                <div class="clients_img col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="../assets/paysafe.png" alt="clientes">
+                </div>
+                <div class="clients_img col-md-4">
+                    <img class="img-fluid mx-auto d-block" src="../assets/unionpay.png" alt="clientes">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container-fluid pt-2">
+        <p class="text-center">copyright© 2022 | Brayyan Horna - Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
