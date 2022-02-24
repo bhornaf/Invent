@@ -1,0 +1,25 @@
+{
+  "name": "invent",
+  "version": "1.0.0",
+  "description": "SASS comision 22190",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss style/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhornaf/Invent.git"
+  },
+  "author": "Brayyan Horna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhornaf/Invent/issues"
+  },
+  "homepage": "https://github.com/bhornaf/Invent#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
