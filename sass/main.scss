@@ -1,0 +1,74 @@
+$page-background: #fafafa;
+$title-background: #6B62FF;
+$clients-background: #E6E6E6;
+$dark-background: #333;
+
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap);
+
+body{
+    background: $page-background;
+    font-family: 'Work Sans';
+}
+
+
+.navbar--color{
+    background-color: $dark-background;
+}
+
+.active{
+    font-weight: bold;
+    background-color: #6B62FF; 
+}
+
+.clients{
+    background: $clients-background;
+    height: auto;
+
+    &__img img{
+        height: 10rem;
+    }
+
+    &__img:hover{
+        background:$title-background;
+        transform: scale(1.1,1.1);
+        transition: 0.5s;
+    }
+}
+
+.title{
+    color: $title-background;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: $title-background;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-title--color{
+    color: $title-background;
+    font-weight: 500;
+}
+
+.card:hover{
+    color: white;
+    background:$title-background;
+    transform: scale(1,1.02);
+    transition: 0.5s;
+    
+    & .card-title {
+        color: white;
+    }
+}
+
+.footer{
+    background-color: $dark-background;
+    color: white;
+    height: auto;
+    padding: 10px;
+}

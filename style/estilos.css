@@ -15,7 +15,6 @@ body{
 .title{
     color: #6B62FF;
     font-family: 'Work Sans', sans-serif;
-    /* font-size: 3.5rem; */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -73,7 +72,7 @@ body{
     content: "- ";
 }
 
-.clients{
+/* .clients{
     background: #E6E6E6;
     height: auto;
 }
@@ -85,4 +84,4 @@ body{
     background:#6B62FF;
     transform: scale(1.1,1.1);
     transition: 0.5s;
-}
+} */
