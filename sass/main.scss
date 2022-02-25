@@ -1,10 +1,9 @@
-$page-background: #fafafa;
-$title-background: #6B62FF;
-$clients-background: #E6E6E6;
-$dark-background: #333;
-
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap);
+
+@import "../style/parciales/paleta";
+@import "../style/parciales/cliente";
+
 
 body{
     background: $page-background;
@@ -21,20 +20,7 @@ body{
     background-color: #6B62FF; 
 }
 
-.clients{
-    background: $clients-background;
-    height: auto;
 
-    &__img img{
-        height: 10rem;
-    }
-
-    &__img:hover{
-        background:$title-background;
-        transform: scale(1.1,1.1);
-        transition: 0.5s;
-    }
-}
 
 .title{
     color: $title-background;

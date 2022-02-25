@@ -1,0 +1,16 @@
+@import "./paleta";
+
+.clients{
+    background: $clients-background;
+    height: auto;
+
+    &__img img{
+        height: 10rem;
+    }
+
+    &__img:hover{
+        background:$title-background;
+        transform: scale(1.1,1.1);
+        transition: 0.5s;
+    }
+}

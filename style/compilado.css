@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap);
+.clients {
+  background: #E6E6E6;
+  height: auto; }
+  .clients__img img {
+    height: 10rem; }
+  .clients__img:hover {
+    background: #6B62FF;
+    transform: scale(1.1, 1.1);
+    transition: 0.5s; }
+
 body {
   background: #fafafa;
   font-family: 'Work Sans'; }
@@ -10,16 +20,6 @@ body {
 .active {
   font-weight: bold;
   background-color: #6B62FF; }
-
-.clients {
-  background: #E6E6E6;
-  height: auto; }
-  .clients__img img {
-    height: 10rem; }
-  .clients__img:hover {
-    background: #6B62FF;
-    transform: scale(1.1, 1.1);
-    transition: 0.5s; }
 
 .title {
   color: #6B62FF;
