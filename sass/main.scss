@@ -2,59 +2,37 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap);
 
 @import "../style/parciales/paleta";
+@import "../style/parciales/layout";
+@import "../style/parciales/cards";
 @import "../style/parciales/cliente";
-
-
-body{
-    background: $page-background;
-    font-family: 'Work Sans';
-}
-
-
-.navbar--color{
-    background-color: $dark-background;
-}
-
-.active{
-    font-weight: bold;
-    background-color: #6B62FF; 
-}
+@import "../style/parciales/servicios";
 
 
 
-.title{
-    color: $title-background;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.subtitle{
-    color: $title-background;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+@mixin sizes__img__card($height, $width, $br) {
+    height: $height;
+    width: $width;
+    border-radius: $br;
 }
 
 .card-title--color{
+    @extend .card-title;
     color: $title-background;
     font-weight: 500;
 }
 
-.card:hover{
-    color: white;
-    background:$title-background;
-    transform: scale(1,1.02);
-    transition: 0.5s;
-    
-    & .card-title {
-        color: white;
-    }
+.member_img{
+    @include sizes__img__card(150px, 150px, 150px);
 }
 
-.footer{
-    background-color: $dark-background;
-    color: white;
-    height: auto;
-    padding: 10px;
+$redes:(
+    "linkedin": rgb(0, 132, 255),
+    "instagram": rgb(150, 76, 150),
+    "facebook": rgb(65, 65, 228)
+);
+
+@each $red, $color in $redes {
+    .icon--#{$red}{
+        color: $color;
+    }
 }

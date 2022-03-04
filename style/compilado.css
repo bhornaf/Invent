@@ -1,15 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap);
-.clients {
-  background: #E6E6E6;
-  height: auto; }
-  .clients__img img {
-    height: 10rem; }
-  .clients__img:hover {
-    background: #6B62FF;
-    transform: scale(1.1, 1.1);
-    transition: 0.5s; }
-
 body {
   background: #fafafa;
   font-family: 'Work Sans'; }
@@ -33,20 +23,56 @@ body {
   font-weight: bold;
   text-transform: uppercase; }
 
-.card-title--color {
-  color: #6B62FF;
-  font-weight: 500; }
+.footer {
+  background-color: #333;
+  color: white;
+  height: auto;
+  padding: 10px; }
 
 .card:hover {
   color: white;
   background: #6B62FF;
   transform: scale(1, 1.02);
   transition: 0.5s; }
-  .card:hover .card-title {
+  .card:hover .card-title, .card:hover .card-title--color {
     color: white; }
 
-.footer {
-  background-color: #333;
-  color: white;
-  height: auto;
-  padding: 10px; }
+.team {
+  background: #E6E6E6;
+  height: auto; }
+
+.clients {
+  background: #E6E6E6;
+  height: auto; }
+  .clients__img img {
+    height: 10rem; }
+  .clients__img:hover {
+    background: #6B62FF;
+    transform: scale(1, 1.02);
+    transition: 0.5s; }
+
+.item_services {
+  color: #3F3D56;
+  font-size: 1.2rem;
+  font-weight: 300; }
+  .item_services:before {
+    color: #3F3D56;
+    content: "- "; }
+
+.card-title--color {
+  color: #6B62FF;
+  font-weight: 500; }
+
+.member_img {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px; }
+
+.icon--linkedin {
+  color: #0084ff; }
+
+.icon--instagram {
+  color: #964c96; }
+
+.icon--facebook {
+  color: #4141e4; }

@@ -1,0 +1,18 @@
+@import "./transform";
+@import "./paleta";
+.card:hover{
+    color: white;
+    background:$title-background;
+    @include img__transform;
+    // transform: scale(1,1.02);
+    // transition: 0.5s;
+    
+    & .card-title {
+        color: white;
+    }
+}
+
+.team{
+    background: #E6E6E6;
+    height: auto;
+}
