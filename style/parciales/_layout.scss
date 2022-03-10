@@ -23,7 +23,7 @@ body{
 
 .subtitle{
     color: $title-background;
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -33,4 +33,14 @@ body{
     color: white;
     height: auto;
     padding: 10px;
+}
+
+.btn-purple{
+    color: white;
+    background-color: $title-background;
+
+    &:hover{
+        color: white;
+        background-color: #5e56f7;
+    }
 }

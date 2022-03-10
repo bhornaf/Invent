@@ -19,7 +19,6 @@ body {
 
 .subtitle {
   color: #6B62FF;
-  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -28,6 +27,13 @@ body {
   color: white;
   height: auto;
   padding: 10px; }
+
+.btn-purple {
+  color: white;
+  background-color: #6B62FF; }
+  .btn-purple:hover {
+    color: white;
+    background-color: #5e56f7; }
 
 .card:hover {
   color: white;
